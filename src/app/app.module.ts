@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UiModule } from './ui/ui.module';
+import { AppRoutingModule } from './/app-routing.module';
+import { LandingModule } from './landing/landing.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { UiModule } from './ui/ui.module';
   ],
   imports: [
     BrowserModule,
-    UiModule
+    UiModule,
+    AppRoutingModule,
+    LandingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

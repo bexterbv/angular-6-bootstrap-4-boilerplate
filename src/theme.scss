@@ -1,0 +1,86 @@
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$theme-blue: #3861b5;
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$primary: #df4760;
+$secondary: #0033a0;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+// Your variable overrides
+$body-bg: $gray-200;
+$body-color: $gray-300;
+
+$jumbotron-bg: $gray-100;
+
+$link-color: $primary;
+$link-decoration: none !default;
+$link-hover-color: lighten($primary, 15%) !default;
+$link-hover-decoration: underline !default;
+
+// Bootstrap and its default variables
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+@mixin linearGradient($top, $bottom) {
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top, $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, $top),
+        color-stop(100%, $bottom)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, $top 0%, $bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, $top 0%, $bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, $top 0%, $bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom, $top 0%, $bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+    color: $gray-800;
+}
+
+.navbar-bexter {
+    background-color: $theme-blue;
+}
+/* change the brand and text color */
+.navbar-bexter .navbar-brand,
+.navbar-bexter .navbar-text {
+    color: $gray-400;
+}
+/* change the link color */
+.navbar-bexter .navbar-nav .nav-link {
+    color: $gray-400;
+}
+/* change the color of active or hovered links */
+.navbar-bexter .nav-item.active .nav-link,
+.navbar-bexter .nav-item:hover .nav-link {
+    color: $white;
+}
+/* change the brand and text color */
