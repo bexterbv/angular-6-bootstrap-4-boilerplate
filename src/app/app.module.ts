@@ -14,7 +14,8 @@ import { LandingModule } from './landing/landing.module';
     BrowserModule,
     UiModule,
     AppRoutingModule,
-    LandingModule
+    LandingModule,
+    AngularFireStoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
